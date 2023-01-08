@@ -63,38 +63,37 @@ from AnkiVector.modules.helper_funcs.misc import paginate_modules
 from AnkiVector.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-*ʜᴀʟʟᴏ!,*
-*sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴀɴᴏɴɪᴍ ʀᴏʙᴏᴛ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ - ᴍᴜsɪᴄ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴅᴇɴɢᴀɴ ғɪᴛᴜʀ ʏᴀɴɢ sᴀɴɢᴀᴛ ᴍᴇɴᴀʀɪᴋ...*
+*Hello {} !*
+*Saya Adalah Hiroshi Robot, Group Manager / Music Voice Chat Dengan Fitur Yang Sangat Menarik.* [✨]
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-
-• ғᴇʟʟ ғʀᴇᴇ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ.
-• ᴅᴇᴠᴇʟᴏᴘᴇʀ @Biarenakliatnyaaaa
+➛ *Uptime:* {}
+➛ {} *users, across* {} *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ ᴋʟɪᴋ ᴛᴏᴍʙᴏʟ /help ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇᴛᴀʜᴜɪ ғɪᴛᴜʀ ᴍᴇɴᴀʀɪᴋ ᴅᴀʀɪ ʙᴏᴛ ᴍᴜsɪᴄ ᴀɴᴏɴɪᴍ ʀᴏʙᴏᴛ.
+*Klik Tombol help Untuk Mengetahui Fitur Menarik Dari Hiroshirobot*
 
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/TurboMusicChnl"),
-        InlineKeyboardButton(text="ɢʀᴏᴜᴘs", url="https://t.me/TurboGroupSupport"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/vailedcode"),
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘs", url="https://t.me/hiroxsupport"),
     ],
     [
-        InlineKeyboardButton(text="ᴅᴏɴᴀᴛᴜʀ", url="https://t.me/Biarenakliatnyaaaa"),
-        InlineKeyboardButton(text="ʜᴇʟᴘ", url=f"https://t.me/Musicanonimbot?start=help"),
+        InlineKeyboardButton(text="ᴅᴏɴᴀᴛᴜʀ", url="https://t.me/splesneey"),
+        InlineKeyboardButton(text="ʜᴇʟᴘ", url=f"https://t.me/hiroshirobot?start=help"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ɢᴜᴀ ᴋᴇ ɢʀᴏᴜᴘs ʟᴜ ᴋɴᴛʟ 🙋‍♂️", url=f"https://t.me/Musicanonimbot?startgroup=true"
+            text="➗ Tambahkan Saya Ke Grup Anda ➗", url=f"https://t.me/hiroshirobot?startgroup=true"
         ),
     ],
 ]
 
 
-ANKIVECTOR_IMG = "https://telegra.ph/file/a8d7c3eff933b254c6ab4.jpg"
+ANKIVECTOR_IMG = "https://telegra.ph//file/53a551f5a002aedbb2a66.jpg"
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/b4bc212528539a589b47c.jpg)
+*Main Commands :* [🤖](https://telegra.ph//file/53a551f5a002aedbb2a66.jpg)
 ✪ /start: 𝐒𝐭𝐚𝐫𝐭𝐬 𝐦𝐞! 𝐘𝐨𝐮'𝐯𝐞 𝐩𝐫𝐨𝐛𝐚𝐛𝐥𝐲 𝐚𝐥𝐫𝐞𝐚𝐝𝐲 𝐮𝐬𝐞𝐝 𝐭𝐡𝐢𝐬.
 ✪ /help: 𝐂𝐥𝐢𝐜𝐤 𝐭𝐡𝐢𝐬, 𝐈'𝐥𝐥 𝐥𝐞𝐭 𝐲𝐨𝐮 𝐤𝐧𝐨𝐰 𝐚𝐛𝐨𝐮𝐭 𝐦𝐲𝐬𝐞𝐥𝐟!
 ✪ /donate: 𝐘𝐨𝐮 𝐜𝐚𝐧 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 𝐦𝐲 𝐜𝐫𝐞𝐚𝐭𝐞𝐫 𝐮𝐬𝐢𝐧𝐠 𝐭𝐡𝐢𝐬 𝐜𝐨𝐦𝐦𝐚𝐧𝐝.
@@ -107,7 +106,7 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """𝐇𝐞𝐲𝐲𝐨𝐨 𝐒𝐞𝐧𝐚𝐧𝐠 𝐦𝐞𝐧𝐝𝐞𝐧𝐠𝐚𝐫 𝐀𝐧𝐝𝐚 𝐢𝐧𝐠𝐢𝐧 𝐦𝐞𝐧𝐲𝐮𝐦𝐛𝐚𝐧𝐠,𝐀𝐧𝐝𝐚 𝐝𝐚𝐩𝐚𝐭 𝐦𝐞𝐧𝐲𝐮𝐦𝐛𝐚𝐧𝐠 𝐤𝐞 𝐩𝐞𝐧𝐮𝐥𝐢𝐬 𝐊𝐨𝐝𝐞 𝐀𝐬𝐥𝐢 [𝐆𝐋𝐈𝐓𝐓𝐄𝐑](t.me/Biarenakliatnyaaa)"""
+DONATE_STRING = """𝐇𝐞𝐲𝐲𝐨𝐨 𝐒𝐞𝐧𝐚𝐧𝐠 𝐦𝐞𝐧𝐝𝐞𝐧𝐠𝐚𝐫 𝐀𝐧𝐝𝐚 𝐢𝐧𝐠𝐢𝐧 𝐦𝐞𝐧𝐲𝐮𝐦𝐛𝐚𝐧𝐠,𝐀𝐧𝐝𝐚 𝐝𝐚𝐩𝐚𝐭 𝐦𝐞𝐧𝐲𝐮𝐦𝐛𝐚𝐧𝐠 𝐤𝐞 𝐩𝐞𝐧𝐮𝐥𝐢𝐬 𝐊𝐨𝐝𝐞 𝐀𝐬𝐥𝐢 [нιяσѕнι](t.me/splesneey)"""
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -401,7 +400,7 @@ def AnkiVector_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [𝐆𝐋𝐈𝐓𝐓𝐄𝐑 𝐒𝐔𝐏𝐏𝐎𝐑𝐓](https://t.me/Virtualllnihsad).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/hiroxsupport).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -420,9 +419,9 @@ def AnkiVector_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Rio Manager Project](https://t.me/rio1robot)."
+            f"\n\nBased on [Hiro Manager Project](https://t.me/hiroshirobot)."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by Rio"
-            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @Virtualllnihsad.",
+            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @hiroxsupport.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -805,7 +804,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@Virtualllnihsad", "I am now online!")
+            dispatcher.bot.sendMessage(f"@hiroxsuppory", "I am now online!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
